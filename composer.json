@@ -1,0 +1,21 @@
+{
+    "name": "genekrevets/sparkcentral-challenge",
+    "description": "This is the SparkCentral coding challenge",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Evgeny 'Gene' Krevets",
+            "email": "gene@krevets.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.16@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeneKrevets\\Calculator\\": "src"
+        }
+    }
+
+}
