@@ -1,12 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gene
- * Date: 8/12/15
- * Time: 10:35 AM
- */
-
-namespace GeneKrevets\Calculator\Operation;
+namespace GeneKrevets\Calculator;
 
 /**
  * Interface OperationInterface

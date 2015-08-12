@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gene
- * Date: 8/12/15
- * Time: 9:30 AM
- */
-
 namespace GeneKrevets\Calculator;
 use GeneKrevets\Calculator;
 
@@ -18,6 +11,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 class BasicCalculator
 {
     protected $operands = array();
+    protected $operation;
 
     public function setOperands(array $operands = array())
     {
@@ -42,5 +36,5 @@ class BasicCalculator
 
 $calculator = new BasicCalculator();
 $calculator->setOperands(array(7,5));
-$calculator->setOperation(new Operation\AdditionOperation);
+$calculator->setOperation(new AdditionOperation);
 echo $calculator->operate();
