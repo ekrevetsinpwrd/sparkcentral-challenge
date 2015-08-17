@@ -10,11 +10,12 @@
         }
     ],
     "require": {
-        "monolog/monolog": "^1.16@dev"
+        "monolog/monolog": "^1.16@dev",
+        "jlawrence/eos": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "GeneKrevets\\Calculator\\": "src"
+            "GeneKrevets\\Calculator\\": ["src/Operation/", "src/"]
         }
     }
 

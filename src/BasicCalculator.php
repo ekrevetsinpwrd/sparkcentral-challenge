@@ -1,8 +1,7 @@
 <?php
 namespace GeneKrevets\Calculator;
-use GeneKrevets\Calculator;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 /**
  * This is the main test harness for the library classes
@@ -32,9 +31,20 @@ class BasicCalculator
     {
         return $this->operation->operate($this->operands);
     }
+
+    public function operateOnExpression(ComplexOperationInterface $operation, $expression)
+    {
+        $this->operation = $operation;
+        return $this->operation->solveExpression($expression);
+    }
 }
 
+//// Solve Simple
+//$calculator = new BasicCalculator();
+//$calculator->setOperands(array(7,5));
+//$calculator->setOperation(new AdditionOperation());
+//echo $calculator->operate() . "\n";
+
+// Solve complex
 $calculator = new BasicCalculator();
-$calculator->setOperands(array(7,5));
-$calculator->setOperation(new AdditionOperation);
-echo $calculator->operate();
+echo $calculator->operateOnExpression(new ArithmeticComplexOperation(), "10 + 2 - 5") . "\n";

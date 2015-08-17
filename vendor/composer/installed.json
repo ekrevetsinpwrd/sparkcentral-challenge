@@ -54,12 +54,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "5779c3740ec7902c898dc7353b28d70ab0e690e5"
+            "reference": "72cb14c7049f4471b79a300e11572dcd9113d38a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5779c3740ec7902c898dc7353b28d70ab0e690e5",
-            "reference": "5779c3740ec7902c898dc7353b28d70ab0e690e5",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/72cb14c7049f4471b79a300e11572dcd9113d38a",
+            "reference": "72cb14c7049f4471b79a300e11572dcd9113d38a",
             "shasum": ""
         },
         "require": {
@@ -93,7 +93,7 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
         },
-        "time": "2015-08-11 10:25:54",
+        "time": "2015-08-15 17:42:55",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -123,6 +123,47 @@
             "log",
             "logging",
             "psr-3"
+        ]
+    },
+    {
+        "name": "jlawrence/eos",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jlawrence11/eos.git",
+            "reference": "334411025b1049b0f5988c95e7af0604c2af8230"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jlawrence11/eos/zipball/334411025b1049b0f5988c95e7af0604c2af8230",
+            "reference": "334411025b1049b0f5988c95e7af0604c2af8230",
+            "shasum": ""
+        },
+        "time": "2015-07-27 20:35:31",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "jlawrence\\eos\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1+"
+        ],
+        "authors": [
+            {
+                "name": "Jon Lawrence",
+                "email": "jon@jon-lawrence.com"
+            }
+        ],
+        "description": "Parse and solve math equations without using 'eval()'.",
+        "keywords": [
+            "eos",
+            "equations",
+            "math",
+            "solve"
         ]
     }
 ]

@@ -4,20 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "74f8b18989e87e71ac6d65fc783c6e34",
+    "hash": "d0609273b3dd8f6fa3ed4a4a41520b29",
     "packages": [
+        {
+            "name": "jlawrence/eos",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jlawrence11/eos.git",
+                "reference": "334411025b1049b0f5988c95e7af0604c2af8230"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jlawrence11/eos/zipball/334411025b1049b0f5988c95e7af0604c2af8230",
+                "reference": "334411025b1049b0f5988c95e7af0604c2af8230",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jlawrence\\eos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Lawrence",
+                    "email": "jon@jon-lawrence.com"
+                }
+            ],
+            "description": "Parse and solve math equations without using 'eval()'.",
+            "keywords": [
+                "eos",
+                "equations",
+                "math",
+                "solve"
+            ],
+            "time": "2015-07-27 20:35:31"
+        },
         {
             "name": "monolog/monolog",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "5779c3740ec7902c898dc7353b28d70ab0e690e5"
+                "reference": "72cb14c7049f4471b79a300e11572dcd9113d38a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5779c3740ec7902c898dc7353b28d70ab0e690e5",
-                "reference": "5779c3740ec7902c898dc7353b28d70ab0e690e5",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/72cb14c7049f4471b79a300e11572dcd9113d38a",
+                "reference": "72cb14c7049f4471b79a300e11572dcd9113d38a",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +119,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-08-11 10:25:54"
+            "time": "2015-08-15 17:42:55"
         },
         {
             "name": "psr/log",
@@ -133,7 +172,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "monolog/monolog": 20
+        "monolog/monolog": 20,
+        "jlawrence/eos": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
